@@ -42,6 +42,11 @@ header {
   display: none;
 }
 
+.abrir-menu img,
+.cerrar-menu img {
+  width: 3rem;
+}
+
 /* MAIN */
 
 main {
@@ -304,6 +309,7 @@ footer {
 }
 
 .footer-links ul {
+  align-items: center;
   list-style: none;
   padding: 0;
   display: flex;
@@ -319,6 +325,10 @@ footer {
   color: #f2ecda;
   font-size: 1.5rem;
   margin: 0 0.5rem;
+}
+
+.footer-social a img {
+  max-width: 3rem;
 }
 
 .footer-bottom {
@@ -444,4 +454,9 @@ footer {
     display: block;
     width: 500px;
   }
+
+  footer .container {
+    justify-content: center;
+  }
+
 }
