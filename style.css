@@ -51,7 +51,7 @@ main {
 /* Portada */
 
 #Portada {
-  background-image: url(img/Portada.jpg);
+  background-image: url(img/Portada.webp);
   background-size: cover;
   background-position: center top 55%;
   height: 750px;
