@@ -92,38 +92,50 @@ main {
   height: auto;
 }
 
+/* Contenedor de botones */
 .container-buttons {
   display: flex;
   gap: 2rem;
+  justify-content: center; /* Centra los botones */
+  align-items: center; /* Asegura la alineación vertical */
 }
 
+/* Estilo de los botones */
 .container-buttons button {
-  padding: 1rem 2rem;
+  padding: 12px 24px; /* Aumenta el área tocable */
   background-color: #f2ecda;
   border-radius: 30px;
-  border: 1px;
-  border-color: transparent;
+  border: 2px solid transparent; /* Asegura que el borde tenga un color */
   color: #1d1d1b;
   font-size: 1.5rem;
   font-weight: 700;
-  border: 2px solid transparent;
-  transition: 0.3s;
   cursor: pointer;
+  display: inline-flex; /* Permite que el contenido del botón se centre */
+  align-items: center;
+  justify-content: center;
+  min-width: 44px; /* Tamaño mínimo de área tocable */
+  min-height: 44px; /* Asegura que los botones sean lo suficientemente grandes */
+  transition: 0.3s;
 }
 
 .container-buttons button:hover {
   background-color: #1d1d1b;
-  border: 2px solid #f2ecda;
+  border-color: #f2ecda;
   color: #f2ecda;
 }
 
+/* El enlace dentro del botón */
 .container-buttons button a {
   text-decoration: none;
-  color: #1d1d1b;
+  color: inherit; /* Hereda el color del botón */
+  display: block;
+  width: 100%; /* Asegura que el enlace cubra todo el botón */
+  height: 100%;
+  text-align: center; /* Centra el texto */
+  line-height: normal; /* Ajusta la altura de la línea para mejorar la legibilidad */
 }
 
 .container-buttons button a:hover {
-  text-decoration: none;
   color: #f2ecda;
 }
 
