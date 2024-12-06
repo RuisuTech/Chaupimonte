@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #1d1d1b;
+}
+
+.logo {
+  max-width: 6rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #f2ecda;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #c9442d;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+/* MAIN */
+
+main {
+  background-color: #f2ecda;
+}
+
+/* Portada */
+
+#Portada {
+  background-image: url(img/Portada.jpg);
+  background-size: cover;
+  background-position: center top 55%;
+  height: 750px;
+}
+
+#Portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Portada .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1d1b80;
+}
+
+.container-frase h1 {
+  font-size: 3rem;
+  color: #f2ecda;
+}
+
+.container-frase img {
+  margin-top: 2rem;
+  width: 400px;
+}
+
+.container-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.container-buttons button {
+  padding: 1rem 2rem;
+  background-color: #f2ecda;
+  border-radius: 30px;
+  border: 1px;
+  border-color: transparent;
+  color: #1d1d1b;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.container-buttons button:hover {
+  background-color: #1d1d1b;
+  border: 2px solid #f2ecda;
+  color: #f2ecda;
+}
+
+/* Sobre Nosotros */
+
+#Sobre-Nosotros {
+  background-image: url(img/sobreNosotros.webp);
+  background-size: cover;
+  background-position: center top 55%;
+  height: 650px;
+}
+
+#Sobre-Nosotros .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15%;
+  gap: 3rem;
+  background-color: #e6d3bf66;
+}
+
+#Sobre-Nosotros .container img {
+  width: 460px;
+  border-radius: 30px;
+}
+
+#Sobre-Nosotros .container .container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#Sobre-Nosotros .container .container-text h2 {
+  color: #1d1d1b;
+  font-size: 3rem;
+}
+
+#Sobre-Nosotros .container .container-text p {
+  color: #1d1d1b;
+  text-align: start;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+/* Productos */
+
+#Productos {
+  height: 800px;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+#Productos .container {
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  padding: 3rem 15%;
+}
+
+#Productos .container-text {
+  display: flex;
+  flex-direction: column;
+}
+
+#Productos .container-text h2 {
+  font-size: 3rem;
+  color: #f2ecda;
+}
+
+#Productos .container-text img {
+  margin-left: -180px;
+  width: 700px;
+}
+
+#Productos .container-productos {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: right;
+  gap: 2rem;
+}
+
+#Productos .container-productos h2,
+h3,
+p {
+  color: #f2ecda;
+}
+
+#Productos .container-productos h2 {
+  font-size: 2rem;
+}
+
+#Productos .container-productos h3 {
+  font-size: 1.5rem;
+}
+
+#Productos .container-productos img {
+  width: 300px;
+}
+
+#Productos .img-responsive {
+  display: none;
+}
+
+#Productos .container-productos p {
+  font-size: 1.2rem;
+}
+
+/* Servicios */
+
+#Servicios {
+  background-image: url(img/Servicios.webp);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+}
+
+#Servicios .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15%;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1d1b80;
+  color: #f2ecda;
+}
+
+#Servicios .container h2 {
+  font-size: 3rem;
+}
+
+#Servicios .container h3 {
+  font-size: 2.2rem;
+}
+
+#Servicios .container p {
+  font-size: 1.5rem;
+}
+
+/* Contacto */
+
+#Contacto .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#Contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#Contacto .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#Contacto .form-group label {
+  font-weight: bold;
+}
+
+#Contacto .form-group input,
+#Contacto .form-group textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#Contacto button {
+  padding: 0.75rem;
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#Contacto button:hover {
+  background-color: #5a6268;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 550px) {
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .abrir-menu {
+    color: #f2ecda;
+  }
+
+  .cerrar-menu {
+    color: #f2ecda;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1d1d1b;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-list li a {
+    color: #f2ecda;
+  }
+
+  /* Main */
+  #Portada {
+    height: 500px;
+  }
+
+  .container-frase h1 {
+    font-size: 2.5rem;
+    padding: 0 2rem;
+  }
+
+  .container-frase img {
+    width: 250px;
+  }
+
+  .container-buttons button {
+    font-size: 1rem;
+  }
+
+  #Sobre-Nosotros .container {
+    text-align: center;
+    padding-top: 2rem;
+    flex-direction: column;
+  }
+
+  #Sobre-Nosotros .container .container-text p {
+    text-align: center;
+  }
+
+  #Sobre-Nosotros .container .container-img img {
+    width: 240px;
+  }
+
+  #Sobre-Nosotros .container .container-text h2 {
+    font-size: 2rem;
+  }
+
+  #Sobre-Nosotros {
+    height: 950px;
+    background-position: center right 20%;
+  }
+  
+  #Productos {
+    height: 1400px;
+  }
+
+  #Productos .container {
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #Productos .container-text img {
+    display: none;
+  }
+
+  #Productos .container-productos {
+    margin-top: 2rem;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  #Productos .container-productos .img-responsive {
+    display: block;
+    width: 500px;
+  }
+}
