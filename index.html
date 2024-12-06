@@ -8,6 +8,9 @@
       name="description"
       content="Descubre el café de especialidad Chaupimonte, originario de las montañas de Oxapampa. Conoce nuestros productos y servicios."
     />
+    <meta property="og:title" content="Chaupimonte - Café de Especialidad" />
+    <meta property="og:description" content="Descubre el sabor único de nuestro café de altura." />
+    <meta property="og:image" content="img/logo.png" />
     <title>Chaupimonte</title>
     <!-- Preload de la imagen del logo -->
     <link rel="preload" href="./img/logo.png" as="image" />
@@ -19,12 +22,11 @@
         class="logo"
         src="./img/Logo.png"
         alt="Logo de Chaupimonte"
-        loading="eager"
       />
-      <button id="abrir" class="abrir-menu" aria-label="Abrir menú">
+      <button id="abrir" class="abrir-menu" aria-label="Abrir menú" aria-expanded="false">
         <img src="img/iconMenu.webp" alt="Abrir menú">
       </button>
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" role="navigation">
         <button class="cerrar-menu" aria-label="Cerrar menú" id="cerrar">
           <img src="img/iconX.webp" alt="Cerrar Menú">
         </button>
@@ -44,15 +46,15 @@
             <img src="img/Logo.png" alt="Logo de Chaupimonte" />
           </div>
           <div class="container-buttons">
-            <button>Productos</button>
-            <button>Contacto</button>
+            <button><a href="#Productos">Productos</a></button>
+            <button><a href="#Contacto">Contacto</a></button>
           </div>
         </div>
       </section>
       <section id="Sobre-Nosotros">
         <div class="container">
           <div class="container-text">
-            <h2>SOBRE NOSOTROS</h2>
+            <h2>Sobre Nosotros</h2>
             <p>
               Bienvenidos a Chaupimonte. En el corazón de las montañas de
               Oxapampa, a 1,850 m.s.n.m., nace nuestro café de especialidad.
@@ -70,6 +72,8 @@
               src="img/NuestraTienda.webp"
               alt="Nuestra Tienda"
               loading="lazy"
+              width="100%"
+              height="auto"
             />
           </div>
         </div>
@@ -78,11 +82,11 @@
         <div class="container">
           <div class="container-text">
             <h2>Productos</h2>
-            <img src="img/CafeFrio.webp" alt="Café Frío" loading="lazy" />
+            <img src="img/CafeFrio.webp" alt="Café Frío" loading="lazy"/>
           </div>
           <div class="container-productos">
-            <h2>CAFÉ CHAUPIMONTE</h2>
-            <h3>Tu Sabor, Tu Estilo (250g, 500g, 1kg)</h3>
+            <h3>Café Chaupimonte</h3>
+            <h4>Tu Sabor, Tu Estilo (250g, 500g, 1kg)</h4>
             <img
               src="img/CafeProducto.webp"
               alt="Café Producto"
@@ -94,12 +98,6 @@
               con tuestes ligero, medio u oscuro para adaptarse a tu estilo.
               Perfecto para cualquier método de preparación.
             </p>
-            <img
-              class="img-responsive"
-              src="img/CafeFrio.webp"
-              alt="Café Frío"
-              loading="lazy"
-            />
           </div>
         </div>
       </section>
@@ -124,7 +122,7 @@
               Estamos ubicados en Chaupimonte. Ven a visitarnos o contáctanos si
               tienes alguna duda.
             </p>
-            <h2>Horario</h2>
+            <h3>Horario</h3>
             <p>Lunes - Jueves: 7:30 - 19:30</p>
             <p>Sábados: 8:00 - 16:00</p>
             <p>Domingo: 8:00 - 13:00</p>
@@ -139,8 +137,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
+            ></iframe>
           </div>
         </div>
       </section>
@@ -153,6 +150,8 @@
             src="./img/Logo.png"
             alt="Logo Chaupimonte"
             loading="lazy"
+            width="200" 
+            height="100"
           />
         </div>
         <div class="footer-links">
@@ -168,12 +167,12 @@
             href="https://www.facebook.com"
             target="_blank"
             aria-label="facebook"
-            ><img src="img/iconFacebook.webp" alt="Facebook"></a>
+            ><img src="img/iconFacebook.webp" alt="Facebook" width="32" height="32"></a>
           <a
             href="https://www.instagram.com"
             target="_blank"
             aria-label="instagram"
-            ><img src="img/iconInstagram.webp" alt="Instagram"></a>
+            ><img src="img/iconInstagram.webp" alt="Instagram" width="32" height="32"></a>
         </div>
       </div>
       <div class="footer-bottom">
