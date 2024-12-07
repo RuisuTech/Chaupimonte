@@ -9,9 +9,12 @@
       content="Descubre el café de especialidad Chaupimonte, originario de las montañas de Oxapampa. Conoce nuestros productos y servicios."
     />
     <meta property="og:title" content="Chaupimonte - Café de Especialidad" />
-    <meta property="og:description" content="Descubre el sabor único de nuestro café de altura." />
+    <meta
+      property="og:description"
+      content="Descubre el sabor único de nuestro café de altura."
+    />
     <meta property="og:image" content="img/logo.png" />
-    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
     <title>Chaupimonte</title>
     <!-- Preload de la imagen del logo -->
     <link rel="preload" href="./img/logo.png" as="image" />
@@ -19,23 +22,24 @@
   </head>
   <body>
     <header id="Header">
-      <img
-        class="logo"
-        src="./img/Logo.png"
-        alt="Logo de Chaupimonte"
-      />
-      <button id="abrir" class="abrir-menu" aria-label="Abrir menú" aria-expanded="false">
-        <img src="img/iconMenu.webp" alt="Abrir menú">
+      <img class="logo" src="./img/Logo.png" alt="Logo de Chaupimonte" />
+      <button
+        id="abrir"
+        class="abrir-menu"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        <img src="img/iconMenu.webp" alt="Abrir menú" />
       </button>
       <nav class="nav" id="nav" role="navigation">
         <button class="cerrar-menu" aria-label="Cerrar menú" id="cerrar">
-          <img src="img/iconX.webp" alt="Cerrar Menú">
+          <img src="img/iconX.webp" alt="Cerrar Menú" />
         </button>
         <ul class="nav-list">
           <li><a href="#Sobre-Nosotros">Sobre Nosotros</a></li>
           <li><a href="#Productos">Productos</a></li>
           <li><a href="#Servicios">Servicios</a></li>
-          <li><a href="#Contacto">Contacto</a></li>
+          <li><a href="#Ubicacion">Ubicación</a></li>
         </ul>
       </nav>
     </header>
@@ -48,7 +52,9 @@
           </div>
           <div class="container-buttons">
             <button><a href="#Productos">Productos</a></button>
-            <button><a href="#Contacto">Contacto</a></button>
+            <button>
+              <a href="https://web.whatsapp.com/" target="_blank">Contacto</a>
+            </button>
           </div>
         </div>
       </section>
@@ -81,7 +87,7 @@
         <div class="container">
           <div class="container-text">
             <h2>Productos</h2>
-            <img src="img/CafeFrio.webp" alt="Café Frío" loading="lazy"/>
+            <img src="img/CafeFrio.webp" alt="Café Frío" loading="lazy" />
           </div>
           <div class="container-productos">
             <h3>Café Chaupimonte</h3>
@@ -113,13 +119,13 @@
           </p>
         </div>
       </section>
-      <section id="Contacto">
+      <section id="Ubicacion">
         <div class="container">
           <div class="container-text">
-            <h2>Contacto</h2>
+            <h2>Ubicación</h2>
             <p>
-              Estamos ubicados en Chaupimonte. Ven a visitarnos o contáctanos si
-              tienes alguna duda.
+              Estamos ubicados en Arístides Aljovín 231, Miraflores 15074. Ven a
+              visitarnos o contáctanos en el whatsapp si tienes alguna duda.
             </p>
             <h3>Horario</h3>
             <p>Lunes - Jueves: 7:30 - 19:30</p>
@@ -149,7 +155,7 @@
             src="./img/Logo.png"
             alt="Logo Chaupimonte"
             loading="lazy"
-            width="200" 
+            width="200"
             height="100"
           />
         </div>
@@ -158,28 +164,32 @@
             <li><a href="#Sobre-Nosotros">Sobre Nosotros</a></li>
             <li><a href="#Productos">Productos</a></li>
             <li><a href="#Servicios">Servicios</a></li>
-            <li><a href="#Contacto">Contacto</a></li>
+            <li><a href="#Ubicacion">Ubicación</a></li>
           </ul>
         </div>
         <div class="footer-social">
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/cafechaupimonte/?locale=es_LA"
             target="_blank"
             aria-label="facebook"
-            ><img src="img/iconFacebook.webp" alt="Facebook" width="32" height="32"></a>
+            ><img src="img/iconFacebook.webp" alt="Facebook"
+          /></a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/cafechaupimonte/?hl=es"
             target="_blank"
             aria-label="instagram"
-            ><img src="img/iconInstagram.webp" alt="Instagram" width="32" height="32"></a>
+            ><img src="img/iconInstagram.webp" alt="Instagram"
+          /></a>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2024 Chaupimonte.</p>
       </div>
       <div class="fixed-icons">
-        <a href="#Header"><img src="img/iconFlecha.webp" alt="Regresar"></a>
-        <a href="https://web.whatsapp.com/" target="_blank"><img src="img/iconWhatsapp.webp" alt="whatsapp"></a>
+        <a href="#Header"><img src="img/iconFlecha.webp" alt="Regresar" /></a>
+        <a href="https://web.whatsapp.com/" target="_blank"
+          ><img src="img/iconWhatsapp.webp" alt="whatsapp"
+        /></a>
       </div>
     </footer>
     <!-- Script con defer -->
