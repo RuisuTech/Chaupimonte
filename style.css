@@ -142,7 +142,6 @@ main {
   background-image: url(img/sobreNosotros.webp);
   background-size: cover;
   background-position: center top 55%;
-  height: 650px;
 }
 
 #Sobre-Nosotros .container {
@@ -150,7 +149,7 @@ main {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0 15%;
+  padding: 2rem 15%;
   gap: 3rem;
   background-color: #e6d3bf66;
 }
@@ -181,7 +180,6 @@ main {
 /* Productos */
 
 #Productos {
-  height: 800px;
   background-color: #000000;
   overflow: hidden;
 }
@@ -189,7 +187,6 @@ main {
 #Productos .container {
   display: flex;
   width: 100%;
-  height: 1000px;
   padding: 3rem 15%;
 }
 
@@ -218,6 +215,7 @@ main {
 
 #Productos .container-productos h2,
 h3,
+h4,
 p {
   color: #f2ecda;
 }
@@ -242,13 +240,32 @@ p {
   font-size: 1.2rem;
 }
 
+/* Slider */
+.slider {
+  overflow: hidden;
+  width: 300px;
+}
+
+.slider--inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  transition: all 0.3s ease-in;
+}
+
+.slider--inner img {
+  aspect-ratio: 9/16;
+  object-fit: cover;
+  width: 100%;
+}
+
 /* Servicios */
 
 #Servicios {
   background-image: url(img/Servicios.webp);
   background-size: cover;
   background-position: center;
-  height: 650px;
 }
 
 #Servicios .container {
@@ -267,6 +284,7 @@ p {
 
 #Servicios .container h2 {
   font-size: 3rem;
+  margin-top: 1rem;
 }
 
 #Servicios .container h3 {
@@ -275,6 +293,60 @@ p {
 
 #Servicios .container p {
   font-size: 1.5rem;
+}
+
+.slider-servicios {
+  display: flex;
+  width: 100%;
+  height: 430px;
+  margin-bottom: 1rem;
+}
+
+.slider-servicios img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.slider-servicios img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/* Galeria */
+#Galeria {
+  margin: 20px;
+}
+
+#Galeria h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  columns: 5 250px;
+  column-gap: 10px;
+  padding: .5rem;
+}
+
+.grid-item {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+img:hover {
+ scale: 1.05;
 }
 
 /* Ubicación */
@@ -304,7 +376,7 @@ p {
 }
 
 .map-container {
-  max-width: 800px;
+  max-width: 90%;
   margin: 0 auto;
   border: 2px solid #c9442d;
   border-radius: 8px;
@@ -339,6 +411,8 @@ footer {
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -480,10 +554,6 @@ footer {
   #Sobre-Nosotros {
     height: 950px;
     background-position: center right 20%;
-  }
-
-  #Productos {
-    height: 900px;
   }
 
   #Productos .container {
