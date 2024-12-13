@@ -578,6 +578,10 @@ footer {
     width: 500px;
   }
 
+  .slider-servicios img:hover {
+    width: 100%;
+  }
+
   footer .container {
     justify-content: center;
   }
