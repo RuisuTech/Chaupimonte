@@ -319,12 +319,14 @@ p {
 
 /* Galeria */
 #Galeria {
-  margin: 20px;
+  padding: 3rem 10%;
+  background-color: #000000;
+  color: #f2ecda;
 }
 
 #Galeria h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
@@ -339,13 +341,15 @@ p {
   margin-bottom: 10px;
 }
 
-img {
+.grid-item img {
   width: 100%;
   border-radius: 10px;
   transition: 0.3s;
+  border: 1px solid #f2ecda;
+  border-radius: 10px;
 }
 
-img:hover {
+.grid-item img:hover {
   scale: 1.05;
 }
 
@@ -359,7 +363,7 @@ img:hover {
 }
 
 #Ubicacion h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 10px;
   color: #f2ecda;
 }
