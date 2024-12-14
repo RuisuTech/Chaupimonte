@@ -79,6 +79,14 @@ main {
   align-items: center;
   justify-content: center;
   background-color: #1d1d1b80;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 .container-frase h1 {
