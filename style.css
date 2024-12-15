@@ -512,6 +512,7 @@ footer {
     background-color: #1d1d1b;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    z-index: 100;
   }
 
   .nav.visible {
